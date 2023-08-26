@@ -14,7 +14,7 @@ USER 0
 # System dependencies
 # hadolint ignore=DL3006,DL3013,DL3033
 RUN yum upgrade -y  && \
-  yum install -y python3 bash curl jq coreutils py3-pip which unzip shadow-utils && \
+  yum install -y python3 bash curl jq coreutils python3-pip which unzip shadow-utils && \
   yum clean all && \
   rm -rf /var/cache/yum
 
